@@ -1,0 +1,32 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: #00000;
+}
+html {
+  font-family: helvetica, sans-serif;
+}
+body {
+  background: #575757;
+  width: 50%;
+  margin: 0 auto;
+}
+p {
+  text-align: center;
+}
+.form {
+  width: 50%;
+  margin: 0 auto;
+}
+.button {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+#main {
+  background-color: #6dadd1;
+  border-radius: 25px;
+}

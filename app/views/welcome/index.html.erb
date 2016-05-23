@@ -1,0 +1,36 @@
+<div id="main">
+</br>
+<h1>Wendler's 5/3/1 Workout Calculator</h1>
+<p>Enter your current one repetition maximums for each lift along with your current weight to generate a personalized 4 week program based on Jim Wendler's 5/3/1 workout</p>
+<%= form_tag({controller: "welcome", action: "create"}, method: "post" ) do %>
+<div class ="form">
+<table>
+  <tr>
+    <th><%= label_tag(:bw, "Body Weight") %></th>
+    <td><%= text_field_tag(:bw) %></td>
+  </tr>
+  <tr>
+    <th><%= label_tag(:b, "Bench") %></th>
+    <td><%= text_field_tag(:b) %></td>
+  </tr>
+  <tr>
+    <th><%= label_tag(:s, "Squat") %></th>
+    <td><%= text_field_tag(:s) %></td>
+  </tr>
+  <tr>
+    <th><%= label_tag(:d, "Deadlift") %></th>
+    <td><%= text_field_tag(:d) %></td>
+  </tr>
+  <tr>
+    <th><%= label_tag(:o, "Over Head Press") %></th>
+    <td><%= text_field_tag(:o) %></td>
+  </tr>
+</table>
+</br></br>
+<div class ="button">
+  <%= submit_tag("Create Workout") %>
+</div>
+</br></br>
+<% end %>
+</div>
+</div>
